@@ -33,6 +33,10 @@ app.use("/api/stock-suggestions", stockSuggestionRoutes);
 app.use("/api/events", eventRoutes);
 app.use('/api/courses', courseRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Hello from the Invest Rright.... its's renderig!');
+});
+
 const PORT = process.env.PORT || 5000;
 connectDB().then(() => {
   app.listen(PORT, () => console.log(colors.bgBlue(`Server running on port ${PORT}`)));
