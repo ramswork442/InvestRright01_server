@@ -34,7 +34,7 @@ app.use("/api/events", eventRoutes);
 app.use('/api/courses', courseRoutes);
 
 app.get('/', (req, res) => {
-  res.send('Hello from the Invest Rright.... its's renderig!');
+   res.send('Hello from the InvestRright!');
 });
 
 const PORT = process.env.PORT || 5000;
